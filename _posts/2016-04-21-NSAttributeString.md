@@ -14,7 +14,7 @@ comments: true
 * [NSAttributedString](https://developer.apple.com/library/ios/documentation/Cocoa/Reference/Foundation/Classes/NSAttributedString_Class/)
 * [NSParagraphStyle](https://developer.apple.com/library/ios/documentation/Cocoa/Reference/ApplicationKit/Classes/NSParagraphStyle_Class/index.html#//apple_ref/occ/cl/NSParagraphStyle)
 
-###摘要
+### 摘要http://siriismyson.com/
 1. NSMutableAttributedString 是一种[NSTextStorage](https://developer.apple.com/library/ios/documentation/Cocoa/Reference/ApplicationKit/Classes/NSTextStorage_Class/index.html#//apple_ref/occ/cl/NSTextStorage)
 2.  
 
