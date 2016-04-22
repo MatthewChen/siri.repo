@@ -12,6 +12,9 @@ comments: true
 
 之前一直是看别人的blog，昨天开始突然想建一个自己的blog，主要用于看一些文档或者别人博客的经验积累；首先就讲下如何建立一个快速搭建GitHub Pages, 之所以选择github pages，是因为这里不仅可以跟他人分享，而且是用强大的git管理；
 
+```
+    gem install bundler
+```
 
 1.Create a new repository， 创建一个新仓库
     <img src="../assets/img/add_repo.jpg">
@@ -29,6 +32,7 @@ comments: true
 5.将之前在github上创建的newrepo分支pull下来
 
 6.在newrepo分支下，创建一个Gemfile文件， 加入两行：
+
 ```
     source 'https://rubygems.org'
     gem 'github-pages', group: :jekyll_plugins
