@@ -14,14 +14,13 @@ Syntax highlighting is a feature that displays source code, in different colors 
 ### Highlighted Code Blocks
 
 To modify styling and highlight colors edit `/assets/css/syntax.css`.
-# 
+
+{% highlight css %}
+#container {
     float: left;
     margin: 0 -240px 0 0;
     width: 100%;
-# 
-    float: left;
-    margin: 0 -240px 0 0;
-    width: 100%;
+}
 {% endhighlight %}
 
 {% highlight html %}
@@ -59,8 +58,9 @@ end
 
 
 ### Standard Code Block
+
     {% raw %}
-        <nav class="pagination" role="navigation">
+    <nav class="pagination" role="navigation">
         {% if page.previous %}
             <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
         {% endif %}
