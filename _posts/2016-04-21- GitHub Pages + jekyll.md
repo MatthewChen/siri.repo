@@ -21,6 +21,7 @@ comments: true
 3.接下来就是配置本地Jekyll了; 注：安装Jekyll时，必须保证ruby版本在2.x.x及以上([安装ruby](https://www.ruby-lang.org/en/downloads/))；
 
 4.安装Bundler  
+
 ```
     gem install bundler
 ```
