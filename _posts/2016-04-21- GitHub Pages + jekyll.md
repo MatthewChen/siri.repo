@@ -17,18 +17,18 @@ comments: true
     <img src="../assets/img/add_repo.jpg">
 2.  编辑仓库。<img src="../assets/img/edit_repo.jpg">, 按步骤一步步下去，最后publish page后， github会自动生成一个首页； 然后可以用http://用户名.github.com/仓库名 访问；
 3. 接下来就是配置本地Jekyll了; 注：安装Jekyll时，必须保证ruby版本在2.x.x及以上([安装ruby](https://www.ruby-lang.org/en/downloads/))；
-4. 安装Bundler  <pre><code>gem install bundler</code></pre>
+4. 安装Bundler  <code>gem install bundler</code>
 5. 将之前在github上创建的newrepo分支pull下来
-6. 在newrepo分支下，创建一个Gemfile文件， 加入两行：<pre><code>source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins</code></pre>
-7. 命令行输入<pre><code>bundle install</code></pre>
-8. 创建Jekyll site；<pre><code>bundle exec jekyll new . --force</code></pre>
-9. 更新本地github-pages <pre><code>bundle update github-pages</code></pre>
+6. 在newrepo分支下，创建一个Gemfile文件， 加入两行：<code>source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins</code>
+7. 命令行输入<code>bundle install</code>
+8. 创建Jekyll site；<code>bundle exec jekyll new . --force</code>
+9. 更新本地github-pages <code>bundle update github-pages</code>
 10. 绑定域名， 创建CNAME文件，内容为siriismyson.com(我的域名)不用加http;
 11. ping username.github.io记录下IP地址
-12. 然后就是域名解析问题了，我先DNSPod注册了个帐号，然后将万网的的DNS服务器设为<pre><code>f1g1ns1.dnspod.net
+12. 然后就是域名解析问题了，我先DNSPod注册了个帐号，然后将万网的的DNS服务器设为<code>f1g1ns1.dnspod.net
 f1g1ns2.dnspod.net
-</code></pre>
+</code>
 <img src="../assets/img/dns_jiexi.png">
 这是DNSPod默认的服务器，然后再在DNSPod中的域名解析中添加两条记录，解析到username.github.io的ip<img src="../assets/img/yuming.png">
 
