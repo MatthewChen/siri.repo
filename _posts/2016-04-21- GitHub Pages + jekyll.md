@@ -13,22 +13,35 @@ comments: true
 之前一直是看别人的blog，昨天开始突然想建一个自己的blog，主要用于看一些文档或者别人博客的经验积累；首先就讲下如何建立一个快速搭建GitHub Pages, 之所以选择github pages，是因为这里不仅可以跟他人分享，而且是用强大的git管理；
 
 
-1. Create a new repository， 创建一个新仓库
+1.Create a new repository， 创建一个新仓库
     <img src="../assets/img/add_repo.jpg">
-2.  编辑仓库。<img src="../assets/img/edit_repo.jpg">, 按步骤一步步下去，最后publish page后， github会自动生成一个首页； 然后可以用http://用户名.github.com/仓库名 访问；
-3. 接下来就是配置本地Jekyll了; 注：安装Jekyll时，必须保证ruby版本在2.x.x及以上([安装ruby](https://www.ruby-lang.org/en/downloads/))；
-4. 安装Bundler  ```gem install bundler``` 
-5. 将之前在github上创建的newrepo分支pull下来
-6. 在newrepo分支下，创建一个Gemfile文件， 加入两行：```source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins```
-7. 命令行输入```bundle install```
-8. 创建Jekyll site；```bundle exec jekyll new . --force```
-9. 更新本地github-pages ```bundle update github-pages```
-10. 绑定域名， 创建CNAME文件，内容为siriismyson.com(我的域名)不用加http;
-11. ping username.github.io记录下IP地址
-12. 然后就是域名解析问题了，我先DNSPod注册了个帐号，然后将万网的的DNS服务器设为```f1g1ns1.dnspod.net
-f1g1ns2.dnspod.net
-```
+2. 编辑仓库。<img src="../assets/img/edit_repo.jpg">, 按步骤一步步下去，最后publish page后， github会自动生成一个首页； 然后可以用http://用户名.github.com/仓库名 访问；
+3.接下来就是配置本地Jekyll了; 注：安装Jekyll时，必须保证ruby版本在2.x.x及以上([安装ruby](https://www.ruby-lang.org/en/downloads/))；
+4. 安装Bundler  
+# 
+    gem install bundler
+
+5.将之前在github上创建的newrepo分支pull下来
+6.在newrepo分支下，创建一个Gemfile文件， 加入两行：
+# 
+    source 'https://rubygems.org'
+    gem 'github-pages', group: :jekyll_plugins
+7.命令行输入
+# 
+    bundle install
+    
+8.创建Jekyll site；
+# 
+    bundle exec jekyll new . --force
+9.更新本地github-pages 
+# 
+    bundle update github-pages
+10.绑定域名， 创建CNAME文件，内容为siriismyson.com(我的域名)不用加http;   
+11.ping username.github.io记录下IP地址
+12.然后就是域名解析问题了，我先DNSPod注册了个帐号，然后将万网的的DNS服务器设为
+# 
+    f1g1ns1.dnspod.net
+    f1g1ns2.dnspod.net
 <img src="../assets/img/dns_jiexi.png">
 这是DNSPod默认的服务器，然后再在DNSPod中的域名解析中添加两条记录，解析到username.github.io的ip<img src="../assets/img/yuming.png">
 
