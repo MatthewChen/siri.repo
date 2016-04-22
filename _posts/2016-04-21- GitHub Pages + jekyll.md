@@ -9,12 +9,8 @@ comments: true
 ---
 
 第一次写博客，萌新一个，是按之前的记忆写的，有错误的请指正哈～～ thanks
-
+file:///Users/chenjun/blog/siri.repo/assets/img/add_repo.jpg
 之前一直是看别人的blog，昨天开始突然想建一个自己的blog，主要用于看一些文档或者别人博客的经验积累；首先就讲下如何建立一个快速搭建GitHub Pages, 之所以选择github pages，是因为这里不仅可以跟他人分享，而且是用强大的git管理；
-
-```
-    gem install bundler
-```
 
 1.Create a new repository， 创建一个新仓库
     <img src="../assets/img/add_repo.jpg">
@@ -39,16 +35,19 @@ comments: true
 ```
 
 7.命令行输入
+
 ```
     bundle install
 ```
 
 8.创建Jekyll site；
+
 ```
     bundle exec jekyll new . --force
 ```
 
-9.更新本地github-pages 
+9.更新本地github-pages
+ 
 ```
     bundle update github-pages
 ```
@@ -58,6 +57,7 @@ comments: true
 11.ping username.github.io记录下IP地址
 
 12.然后就是域名解析问题了，我先DNSPod注册了个帐号，然后将万网的的DNS服务器设为
+
 ```
     f1g1ns1.dnspod.net
     f1g1ns2.dnspod.net
